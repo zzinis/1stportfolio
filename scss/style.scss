@@ -1,6 +1,125 @@
 @charset 'utf-8';
 @import 'reset';
 
-h1{
-    
+#header{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #bbb;
+
+    .inner{
+        width: 100%;
+        padding: 30px 35px;
+
+        
+        .header_top{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            position: relative;
+
+            h1{
+                a{
+                    display: block;
+                    color: black;
+                    margin-right: 100px;
+                }
+            }
+            .top_section{
+                width: 100%;
+                .wrap{
+                    width: 100%;
+                    display: flex;
+                    justify-content: right;
+
+                    .nav_mid{
+                        margin-right: 50px;
+                        #searchBox{
+                            width: 300px;
+                            height: 30px;
+                        }
+                    }
+
+                    .nav_right{
+                        display: flex;
+                        li{
+                            margin-right: 10px;
+                            &:last-child{
+                                margin-right: none;
+                            }
+                            a{
+                                color: black;
+                                margin-right: 30px;
+                                font-size:23px;
+                            }
+                        }
+                    }
+
+
+                }
+
+            }   
+            }
+
+        }
+
+        .nav{
+            .inner{
+                position: relative;
+
+                .nav_left{
+                    float: left;
+                    li{
+                        float: left;
+                        a{
+                            color: black;
+                            margin-right: 20px;
+                            font: bold 16px/1 'arial';
+                        }
+                        
+                    }
+
+                }
+
+
+                .nav_left_fix{
+                    float: left;
+                    li{
+                        float: left;
+                        a{
+                            color: black;
+                            margin-right: 15x;
+                            font: bold 16px/1 'arial';
+                            &:first-child{
+                                margin-left: 25px;
+                            }
+                        }
+                    }
+                }
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 1.5px;
+                    height: 13px;
+                    background-color: black;
+                    position: absolute;
+                    top: 50%;
+                    left: 18%;
+                    margin-top: 4px;
+                }
+                .nav_right{
+                    float: right;
+                    li{
+                        float: left;
+                        a{
+                            color: black;
+                            margin-right: 20px;
+                            font: bold 16px/1 'arial';
+                            &:last-child{
+                                margin-right: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }

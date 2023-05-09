@@ -4,10 +4,113 @@
   box-sizing: border-box;
 }
 
-ul, li, oi {
+ul, li, ol {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid #bbb;
+}
+#header .inner {
+  width: 100%;
+  padding: 30px 35px;
+}
+#header .inner .header_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  position: relative;
+}
+#header .inner .header_top h1 a {
+  display: block;
+  color: black;
+  margin-right: 100px;
+}
+#header .inner .header_top .top_section {
+  width: 100%;
+}
+#header .inner .header_top .top_section .wrap {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+#header .inner .header_top .top_section .wrap .nav_mid {
+  margin-right: 50px;
+}
+#header .inner .header_top .top_section .wrap .nav_mid #searchBox {
+  width: 300px;
+  height: 30px;
+}
+#header .inner .header_top .top_section .wrap .nav_right {
+  display: flex;
+}
+#header .inner .header_top .top_section .wrap .nav_right li {
+  margin-right: 10px;
+}
+#header .inner .header_top .top_section .wrap .nav_right li:last-child {
+  margin-right: none;
+}
+#header .inner .header_top .top_section .wrap .nav_right li a {
+  color: black;
+  margin-right: 30px;
+  font-size: 23px;
+}
+#header .nav .inner {
+  position: relative;
+}
+#header .nav .inner .nav_left {
+  float: left;
+}
+#header .nav .inner .nav_left li {
+  float: left;
+}
+#header .nav .inner .nav_left li a {
+  color: black;
+  margin-right: 20px;
+  font: bold 16px/1 "arial";
+}
+#header .nav .inner .nav_left_fix {
+  float: left;
+}
+#header .nav .inner .nav_left_fix li {
+  float: left;
+}
+#header .nav .inner .nav_left_fix li a {
+  color: black;
+  margin-right: 15x;
+  font: bold 16px/1 "arial";
+}
+#header .nav .inner .nav_left_fix li a:first-child {
+  margin-left: 25px;
+}
+#header .nav .inner::before {
+  content: "";
+  display: block;
+  width: 1.5px;
+  height: 13px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  margin-top: 4px;
+}
+#header .nav .inner .nav_right {
+  float: right;
+}
+#header .nav .inner .nav_right li {
+  float: left;
+}
+#header .nav .inner .nav_right li a {
+  color: black;
+  margin-right: 20px;
+  font: bold 16px/1 "arial";
+}
+#header .nav .inner .nav_right li a:last-child {
+  margin-right: none;
 }/*# sourceMappingURL=style.css.map */
